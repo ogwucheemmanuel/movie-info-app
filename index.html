@@ -1,37 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-          <title>MovieInfo</title>
-
-          <link rel="stylesheet" href="bootstrap.min.css">
-          <link rel="stylesheet" href="style.css">
-                  
+<html>
+    <head>
+  <title>Calculator using javascript</title>
+  <link rel="stylesheet" tyle="text/css" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-default" >
-            <div class="container">
-                      <div class="navbar-header">
-                                <a class="navbar-brand" href="index.html">MovieInfo</a>
-                      </div>
-            </div>
-  </nav>   
-  <div class="container">
-            <div class="jumbotron">
-                      <h3 class="text-center">Search For Any Movie</h3>
-                      <form id="searchForm">
-                                <input type="text" class="form-control" id="searchText" placeholder="Search Movie....">
-                      </form>
-            </div>
-  </div>   
-  <div class="container">
-            <div id="movies" class="row"></div>
+<div class="back">
+  <div class="readonly">
+    <input type="text"  size="15" id="ro">
   </div>
-  <script src="js/jquery-3.4.1.min.js"></script> 
-  <script src="js/axios.min.js"></script>
-  <script src="js/main.js"></script>
+  <div class="key">
+    <p>
+      <input type="button" class="button one" value="√" onclick="">
+
+      <input type="button" class="button one" value="?" onclick='v("?")'>
+
+      <input type="button" class="button one" value="CE" onclick='v("")'>
+
+      <input type="button" class="button one" value="C" onclick='c("")'>
+    </p>
+
+    <p>
+      <input type="button" class="button two" value="7" onclick='v("7")'>
+
+      <input type="button" class="button two" value="8" onclick='v("8")'>
+
+      <input type="button" class="button two" value="9" onclick='v("9")'>
+
+      <input type="button" class="button one" value="+" onclick='v("+")'>
+    </p>
+
+    <p>
+      <input type="button" class="button two" value="4" onclick='v("4")'>
+
+      <input type="button" class="button two" value="5" onclick='v("5")'>
+
+      <input type="button" class="button two" value="6" onclick='v("6")'>
+
+      <input type="button" class="button one" value="-" onclick='v("-")'>
+    </p>
+
+    <p>
+      <input type="button" class="button two" value="1" onclick='v("1")'>
+
+      <input type="button" class="button two" value="2" onclick='v("2")'>
+
+      <input type="button" class="button two" value="3" onclick='v("3")'>
+
+      <input type="button" class="button one" value="*" onclick='v("*")'>
+    </p>
+
+    <p>
+      <input type="button" class="button two" value="0" onclick='v("0")'>
+
+      <input type="button" class="button one" value="." onclick='v(".")'>
+
+      <input type="button" class="button two" value="=" onclick='e()'>
+
+      <input type="button" class="button one" value="/" onclick='v("/")'>
+    </p>
+  </div>
+</div>
+
+
+
+<script>
+  function sqrt() {
+    document.getElementById("ro").innerHTML = Math.sqrt(val);
+  }
+
+  function c(val) {
+    document.getElementById("ro").value = val;
+  }
+
+  function v(val) {
+    document.getElementById("ro").value += val;
+  }
+
+  function e() {
+    try {
+      c(eval(document.getElementById("ro").value))
+    } catch (e) {
+      c('Error')
+    }
+  }
+</script>
 </body>
-</html>
+</html>]
