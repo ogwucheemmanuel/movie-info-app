@@ -1,0 +1,116 @@
+body {
+	background-color: rgb(32, 38, 38);
+	font-family: "Tajawal", sans-serif;
+	overflow: scroll;
+        }
+        
+        .center {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+        }
+        
+        .outer {
+	width: 25%;
+	height: 75%;
+	min-width: 360px;
+	min-height: 600px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0px 15px 30px -10px #999;
+        }
+        
+        h1 {
+	font-size: 70px;
+        }
+        
+        h2 {
+	margin: 0;
+        }
+        
+        .top {
+	height: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 2;
+        }
+        
+        .bottom {
+	height: 25%;
+	display: flex;
+	align-items: center;
+	z-index: 2;
+	margin: 0 10px;
+        }
+        
+        .nextWrap {
+	width: 20%;
+	white-space: nowrap;
+	position: relative;
+	z-index: 1;
+        }
+        
+        .nextDay {
+	font-size: 12px;
+        }
+        
+        svg {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+        }
+        
+        img {
+	position: absolute;
+	transition: 0.6s;
+	transform-origin: bottom;
+        }
+        
+        canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+        }
+        
+        #sun {
+	width: 40px;
+	position: absolute;
+	height: 40px;
+	background-color: lightyellow;
+	border-radius: 20px;
+	top: 10%;
+	left: 10%;
+	display: none;
+        }
+        
+        .menu {
+	width: fit-content;
+	height: fit-content;
+	left: 60%;
+        }
+        
+        .menu span {
+	display: block;
+	cursor: pointer;
+	color: white;
+	margin: 10px 0px;
+        }
+        
+        .hide {
+	transform: rotate(270deg);
+        }
+        
+        .show {
+	transform: rotate(360deg);
+        }
+        

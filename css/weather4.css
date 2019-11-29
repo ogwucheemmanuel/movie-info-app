@@ -1,0 +1,34 @@
+html {
+          height: 100%;
+        }
+        
+        body {
+          background-color: #33ccff;
+          height: 100%;
+        }
+        
+        .content {
+          width: 410px;
+          background-color: white;
+          text-align: center;
+          padding: 10px;
+          margin-top: 200px;
+          border-radius: 5px;
+          box-shadow: 5px 5px 5px black;
+        }
+        
+        .weather-icon {
+          font-size: 100px;
+        }
+        
+        .weather-info {
+          display: inline-block;
+          font-size: 1.8em;
+          position: relative;
+          top: 4px;
+        }
+        
+        .city {
+          font-size: 1.6em;
+          margin: 20px;
+        }
